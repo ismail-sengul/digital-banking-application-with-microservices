@@ -53,10 +53,6 @@ services:
     links:
       - PostgreSQL
       - eureka-server
-    environment:
-      POSTGRES_USER: root
-      POSTGRES_PASSWORD: password
-      POSTGRES_DB: weg
     env_file:
       - ./transaction-service/src/main/resources/application.properties
   PostgreSQL:
